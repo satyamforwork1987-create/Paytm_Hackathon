@@ -1,0 +1,35 @@
+# AI Collections Agent — Backend Dependencies
+# Pin exact versions for reproducibility
+
+# ── Web Framework ─────────────────────────────────────────────────────────────
+fastapi==0.111.1
+uvicorn[standard]==0.30.1
+python-multipart==0.0.9       # Required for form data (Paytm webhooks)
+
+# ── Database ──────────────────────────────────────────────────────────────────
+sqlalchemy==2.0.31
+asyncpg==0.29.0               # Async PostgreSQL driver
+alembic==1.13.2               # DB migrations
+
+# ── Config ────────────────────────────────────────────────────────────────────
+pydantic==2.8.2
+pydantic-settings==2.3.4
+pydantic[email]==2.8.2
+
+# ── Paytm ─────────────────────────────────────────────────────────────────────
+paytmchecksum==1.0.1
+
+# ── AI / Gemini ───────────────────────────────────────────────────────────────
+google-generativeai==0.7.2
+
+# ── HTTP Client ───────────────────────────────────────────────────────────────
+httpx==0.27.0
+
+# ── Redis ─────────────────────────────────────────────────────────────────────
+redis==5.0.8
+
+# ── Data Pipeline / Synthetic Data ───────────────────────────────────────────
+faker==26.0.0
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+python-dotenv==1.0.1
