@@ -13,3 +13,5 @@ backend/data/*.json
 dist/
 build/
 .DS_Store
+notes.md
+off-topic/

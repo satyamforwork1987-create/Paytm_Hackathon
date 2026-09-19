@@ -9,15 +9,18 @@ python-multipart==0.0.9       # Required for form data (Paytm webhooks)
 # ── Database ──────────────────────────────────────────────────────────────────
 sqlalchemy==2.0.31
 asyncpg==0.29.0               # Async PostgreSQL driver
+greenlet==3.0.3               # Required for SQLAlchemy async operations
 alembic==1.13.2               # DB migrations
 
 # ── Config ────────────────────────────────────────────────────────────────────
 pydantic==2.8.2
 pydantic-settings==2.3.4
 pydantic[email]==2.8.2
+email-validator==2.2.0        # Required for Pydantic EmailStr validation
 
 # ── Paytm ─────────────────────────────────────────────────────────────────────
-paytmchecksum==1.0.1
+paytmchecksum==1.7.0
+pycryptodome==3.20.0          # Cryptographic dependency required by paytmchecksum (Crypto module)
 
 # ── AI / Gemini ───────────────────────────────────────────────────────────────
 google-generativeai==0.7.2
